@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Cart | Vintage Jewels</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-gem"></i>
+        <h2>Vintage Jewels</h2>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="collections.html">Collections</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="cart.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+</header>
+
+<section class="cart-hero">
+    <h1>My Shopping Cart</h1>
+    <p>Elegance begins with every beautiful choice.</p>
+</section>
+
+<section class="cart-section">
+
+    <div class="cart-heading">
+        <h2>Your Jewellery Collection</h2>
+        <a href="shop.html">
+            <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+        </a>
+    </div>
+
+    <div class="cart-layout">
+
+        <div class="cart-products" id="cart-items">
+            <!-- Products displayed using JavaScript -->
+        </div>
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery</span>
+                <span class="free">FREE</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Discount</span>
+                <span id="discount">₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-row grand-total">
+                <span>Total Amount</span>
+                <span id="total">₹0</span>
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="secure">
+                <i class="fa-solid fa-shield-halved"></i>
+                Secure Shopping Experience
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>Vintage Jewels</h3>
+            <p>Luxury Jewellery for Every Occasion.</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <a href="https://m.facebook.com">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/vintage.jewels._/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>Email: vintagejewels@gmail.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+
+    </div>
+
+    <hr style="margin:20px 0;">
+
+    <p class="copy">
+        © 2026 Vintage Jewels. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
