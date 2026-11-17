@@ -1,0 +1,439 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f5ef;
+    color:#333;
+}
+
+
+header{
+    width:100%;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:32px;
+    color:#d4af37;
+}
+
+.logo h2{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover,
+nav .active{
+    color:#d4af37;
+}
+
+.video-section{
+    text-align:center;
+    padding:60px;
+}
+
+.video-section video{
+    width:90%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1600&auto=format&fit=crop");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#d4af37;
+    color:#111;
+    padding:14px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:20px;
+    font-family:'Cinzel',serif;
+    color:#8b6b18;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+    color:#8b6b18;
+}
+
+.card p{
+    margin:10px;
+}
+
+.card h4{
+    color:#d4af37;
+    margin:10px;
+}
+
+.card button{
+    background:#111;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    margin:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#d4af37;
+    color:#111;
+}
+
+
+.feature-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.feature{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.feature i{
+    font-size:40px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.products button{
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#d4af37;
+    color:#111;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.review{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.review p{
+    margin:15px 0;
+}
+
+
+.newsletter{
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.newsletter input{
+    width:320px;
+    max-width:90%;
+    padding:14px;
+    margin:20px 10px;
+    border:none;
+    border-radius:30px;
+}
+
+.newsletter button{
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#d4af37;
+    color:#111;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+footer{
+    background:#000;
+    color:#fff;
+    padding:50px 8% 20px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer-content h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    margin-bottom:10px;
+}
+
+.footer-content i{
+    font-size:22px;
+    margin-right:12px;
+    color:#d4af37;
+    cursor:pointer;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+}
+
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.newsletter input{
+    width:100%;
+}
+.send-message{
+padding:15px 35px;
+background:#d4af37;
+color:#111;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+
+
+
+
+}
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+.login-container{
+    width:380px;
+    background:rgba(255,255,255,.95);
+    margin:80px auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.logo{
+    text-align:center;
+}
+
+.logo i{
+    font-size:45px;
+    color:#d4af37;
+}
+
+.logo h2{
+    margin-top:10px;
+    color:#8b6b18;
+}
+
+.login-container h3{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#d4af37;
+    color:#111;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-btn:hover{
+    background:#b8941f;
+    color:white;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#8b6b18;
+}
+
+
+
